@@ -5,7 +5,7 @@
  * @apiName            CreateSampleForm
  *
  * @api                {POST} /v1/sample-forms Create Sample Form
- * @apiDescription     Endpoint description here...
+ * @apiDescription     Writes to database nickname, age, email and age (all as strings).
  *
  * @apiVersion         1.0.0
  * @apiPermission      Authenticated ['permissions' => '', 'roles' => '']
@@ -13,7 +13,10 @@
  * @apiHeader          {String} accept=application/json
  * @apiHeader          {String} authorization=Bearer
  *
- * @apiParam           {String} parameters here...
+ * @apiParam           {String} nickname
+ * @apiParam           {String} age
+ * @apiParam           {String} email
+ * @apiParam           {String} nome
  *
  * @apiSuccessExample  {json} Success-Response:
  * HTTP/1.1 200 OK
