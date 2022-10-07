@@ -22,7 +22,10 @@ class UpdateSampleFormAction extends ParentAction
     public function run(UpdateSampleFormRequest $request): SampleForm
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'nickname',
+            'age',
+            'email',
+            'note',
         ]);
 
         return app(UpdateSampleFormTask::class)->run($data, $request->id);
