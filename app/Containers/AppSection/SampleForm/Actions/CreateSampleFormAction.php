@@ -20,7 +20,10 @@ class CreateSampleFormAction extends ParentAction
     public function run(CreateSampleFormRequest $request): SampleForm
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'nickname',
+            'age',
+            'email',
+            'note',
         ]);
 
         return app(CreateSampleFormTask::class)->run($data);

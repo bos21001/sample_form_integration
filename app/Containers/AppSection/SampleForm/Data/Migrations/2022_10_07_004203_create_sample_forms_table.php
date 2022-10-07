@@ -12,7 +12,10 @@ return new class extends Migration {
     {
         Schema::create('sample_forms', function (Blueprint $table) {
             $table->id();
-
+            $table->string('nickname')->nullable();
+            $table->string('age')->nullable();
+            $table->string('email')->nullable();
+            $table->string('note')->nullable();
             $table->timestamps();
             //$table->softDeletes();
         });

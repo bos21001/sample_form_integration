@@ -7,7 +7,10 @@ use App\Ship\Parents\Models\Model as ParentModel;
 class SampleForm extends ParentModel
 {
     protected $fillable = [
-
+        'nickname',
+        'age',
+        'email',
+        'note',
     ];
 
     protected $hidden = [
