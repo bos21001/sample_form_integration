@@ -5,7 +5,7 @@
  * @apiName            DeleteSampleForm
  *
  * @api                {DELETE} /v1/sample-forms/:id Delete Sample Form
- * @apiDescription     Endpoint description here...
+ * @apiDescription     Delete an specific sample form by its id
  *
  * @apiVersion         1.0.0
  * @apiPermission      Authenticated ['permissions' => '', 'roles' => '']
@@ -13,7 +13,7 @@
  * @apiHeader          {String} accept=application/json
  * @apiHeader          {String} authorization=Bearer
  *
- * @apiParam           {String} parameters here...
+ * @apiParam           {String} id
  *
  * @apiSuccessExample  {json} Success-Response:
  * HTTP/1.1 200 OK

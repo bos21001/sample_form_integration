@@ -5,7 +5,7 @@
  * @apiName            FindSampleFormById
  *
  * @api                {GET} /v1/sample-forms/:id Find Sample Form By Id
- * @apiDescription     Endpoint description here...
+ * @apiDescription     Finds for one specific entry of SampleForm
  *
  * @apiVersion         1.0.0
  * @apiPermission      Authenticated ['permissions' => '', 'roles' => '']
@@ -13,7 +13,7 @@
  * @apiHeader          {String} accept=application/json
  * @apiHeader          {String} authorization=Bearer
  *
- * @apiParam           {String} parameters here...
+ * @apiParam           {String} id
  *
  * @apiSuccessExample  {json} Success-Response:
  * HTTP/1.1 200 OK

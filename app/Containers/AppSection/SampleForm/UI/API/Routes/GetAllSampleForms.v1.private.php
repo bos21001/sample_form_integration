@@ -5,7 +5,7 @@
  * @apiName            GetAllSampleForms
  *
  * @api                {GET} /v1/sample-forms Get All Sample Forms
- * @apiDescription     Endpoint description here...
+ * @apiDescription     Lists all sample form items
  *
  * @apiVersion         1.0.0
  * @apiPermission      Authenticated ['permissions' => '', 'roles' => '']
@@ -13,7 +13,6 @@
  * @apiHeader          {String} accept=application/json
  * @apiHeader          {String} authorization=Bearer
  *
- * @apiParam           {String} parameters here...
  *
  * @apiSuccessExample  {json} Success-Response:
  * HTTP/1.1 200 OK

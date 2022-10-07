@@ -13,10 +13,10 @@
  * @apiHeader          {String} accept=application/json
  * @apiHeader          {String} authorization=Bearer
  *
- * @apiParam           {String} nickname
- * @apiParam           {String} age
- * @apiParam           {String} email
- * @apiParam           {String} nome
+ * @apiParam           {String} [nickname]
+ * @apiParam           {String} [age]
+ * @apiParam           {String} [email]
+ * @apiParam           {String} [nome]
  *
  * @apiSuccessExample  {json} Success-Response:
  * HTTP/1.1 200 OK
