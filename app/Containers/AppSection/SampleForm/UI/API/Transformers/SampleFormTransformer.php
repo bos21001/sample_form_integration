@@ -25,6 +25,8 @@ class SampleFormTransformer extends ParentTransformer
         return $this->ifAdmin([
             'real_id' => $sampleform->id,
             'created_at' => $sampleform->created_at,
+            'email' => $sampleform->email,
+            'note' => $sampleform->note,
             'updated_at' => $sampleform->updated_at,
             'readable_created_at' => $sampleform->created_at->diffForHumans(),
             'readable_updated_at' => $sampleform->updated_at->diffForHumans(),
