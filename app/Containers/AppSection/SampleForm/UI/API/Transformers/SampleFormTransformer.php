@@ -26,6 +26,7 @@ class SampleFormTransformer extends ParentTransformer
             'real_id' => $sampleform->id,
             'created_at' => $sampleform->created_at,
             'nickname' => $sampleform->nickname,
+            'age' => $sampleform->age,
             'email' => $sampleform->email,
             'note' => $sampleform->note,
             'updated_at' => $sampleform->updated_at,
