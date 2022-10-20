@@ -21,7 +21,7 @@ class GetAllSampleFormsTask extends ParentTask
      */
     public function run(): mixed
     {
-        $result = $this->addRequestCriteria()->repository->paginate();
+        $result = $this->addRequestCriteria()->repository->all();
         SampleFormsListedEvent::dispatch($result);
 
         return $result;
