@@ -15,7 +15,6 @@ yarn-error.log
 .env.testing
 storage/logs/laravel.log
 /public/uploads/
-/laradock*/
 _ide_helper*.php
 .phpstorm.meta.php
 /.vagrant
