@@ -89,6 +89,8 @@ password: admin
 
 > `php artisan apiato:apidoc`
 
+13. (Optional): Follow the Getting Started of [sample_form_react](https://github.com/bos21001/sample_form_react) which consume these APIs properly.
+
 [Software Demo Video](http://youtube.link.goes.here) - Coming soon!!
 
 # Relational Database
