@@ -16,70 +16,103 @@ https://laradock.io/getting-started/#requirements
 
 1. Clone the following repositories in the same directory:
 
-> `git clone git@github.com:bos21001/sample_form_integration.git`
+```
+git clone git@github.com:bos21001/sample_form_integration.git
+```
 
-> `git clone https://github.com/Laradock/laradock.git`
+```
+git clone https://github.com/Laradock/laradock.git
+```
 
 2. Copy the the `.env` and `default.conf` from sample_form_integration directory to laradock directory:
 
-> `cp sample_form_integration/laradock/.env.example laradock/.env && cp sample_form_integration/laradock/nginx/sites/default.conf laradock/nginx/sites/default.conf`
+```
+cp sample_form_integration/laradock/.env.example laradock/.env && cp sample_form_integration/laradock/nginx/sites/default.conf laradock/nginx/sites/default.conf
+```
 
 3. Go to laradock directory:
 
-> `cd laradock/`
+```
+cd laradock/
+```
 
 4. Build and initialize the following dockers from laradock:
 
-> `docker-compose build nginx php-fpm workspace postgres && docker-compose up -d nginx php-fpm workspace postgres`
+```
+docker-compose build nginx php-fpm workspace postgres && docker-compose up -d nginx php-fpm workspace postgres
+```
 
 5. Find and copy the ipaddress setted to your postgres docker:
 
-> `docker inspect laradock_postgres_1`
+```
+docker inspect laradock_postgres_1
+```
 
 6. Edit your hosts file:
 
-> `sudo nano /etc/hosts`
+```
+sudo nano /etc/hosts
+```
 
 - Paste the following in the last line:
 
-> 127.0.0.1 sample-form.local api.sample-form.local admin.sample-form.local\
-> **[paste your postgres ipAddress here]** db.sample-form.local
+```
+127.0.0.1 sample-form.local api.sample-form.local admin.sample-form.local\
+[paste your postgres ipAddress here] db.sample-form.local
+```
 
 ```diff
 - Make sure to execute all the following commands within the workspace container generated with laradock. Use the following command to acces this container:
-
+```
+```
 docker-compose exec --user=laradock workspace bash
 ```
 7. Go to sample_form_integration directory and copy `.env-example` in the root directory renaming it to `.env`:
 
-> `cd sample_form_integration/`
+```
+cd sample_form_integration/
+```
 
-> `cp .env.example .env`
+```
+cp .env.example .env
+```
 
 8. Install all composer and npm dependencies:
 
-> `composer install`
+```
+composer install
+```
 
-> `npm install`
+```
+npm install
+```
 
 9. Create your KEY_APP:
 
-> `php artisan key:generate`
+```
+php artisan key:generate
+```
 
 10. Set the database:
 
-> `php artisan migrate`
+```
+php artisan migrate
+```
 
-> `php artisan db:seed`
+```
+php artisan db:seed
+```
 
 This will generate all the tables and will create an admin user with the following credentials:
 
-email: admin@admin.com\
-password: admin
+>email: admin@admin.com\
+>password: admin
 
 11. Install passport and add the generated keys to your `.env` file:
 
-> `php artisan passport:install`
+```
+php artisan passport:install
+```
 
 > Copy the second `Client ID` generated and paste in `CLIENT_WEB_ID` in the `.env`file:
 > Copy the `Client Secret` of the `Client ID`you copied and paste in `CLIENT_WEB_SECRET`
@@ -87,9 +120,11 @@ password: admin
 
 12. Finally Create the documentations of the API endpoints with ApiDocJs using the artisan command:
 
-> `php artisan apiato:apidoc`
+```
+php artisan apiato:apidoc
+```
 
-13. (Optional): Follow the Getting Started of [sample_form_react](https://github.com/bos21001/sample_form_react) which consume these APIs properly.
+13. **(Optional)**: Follow the Getting Started of [sample_form_react](https://github.com/bos21001/sample_form_react) which consume these APIs properly.
 
 [Software Demo Video](http://youtube.link.goes.here) - Coming soon!!
 
