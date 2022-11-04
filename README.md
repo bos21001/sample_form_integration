@@ -46,7 +46,7 @@ docker-compose exec --user=laradock workspace bash
 ```
 7. Go to sample_form_integration directory and copy `.env-example` in the root directory renaming it to `.env`:
 
-> `cd ../sample_form_integration/`
+> `cd sample_form_integration/`
 
 > `cp .env.example .env`
 
@@ -60,18 +60,19 @@ docker-compose exec --user=laradock workspace bash
 
 > `php artisan key:generate`
 
-10. Install passport and add the generated keys to your `.env` file:
-
-> `php artisan passport:install`
-
-> Copy an `Client ID` generated and paste in `CLIENT_WEB_ID` in the `.env`file:
-> Copy the `Client Secret` of the `Client ID`you copied and paste in `CLIENT_WEB_SECRET`
-
-11. Set the database:
+10. Set the database:
 
 > `php artisan migrate`
 
 > `php artisan db:seed`
+
+11. Install passport and add the generated keys to your `.env` file:
+
+> `php artisan passport:install`
+
+> Copy the second `Client ID` generated and paste in `CLIENT_WEB_ID` in the `.env`file:
+> Copy the `Client Secret` of the `Client ID`you copied and paste in `CLIENT_WEB_SECRET`
+
 
 This will generate all the tables and will create an admin user with the following credentials:
 
