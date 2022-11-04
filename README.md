@@ -6,7 +6,13 @@ For this part of the project, I configured Apiato and created a container named 
 
 This project is meant to be used with the Laradock framework. It creates the necessary dockers such as PostgreSQL, Nginx, and PHP-fpm as the initial development environment.
 
-## To run this application locally follow the steps bellow:
+# Requirements
+
+The same as Laradock requirements:
+
+https://laradock.io/getting-started/#requirements
+
+# Getting Started
 
 1. Clone the following repositories in the same directory:
 
