@@ -72,6 +72,11 @@ docker-compose exec --user=laradock workspace bash
 
 > `php artisan db:seed`
 
+This will generate all the tables and will create an admin user with the following credentials:
+
+email: admin@admin.com\
+password: admin
+
 11. Install passport and add the generated keys to your `.env` file:
 
 > `php artisan passport:install`
@@ -79,11 +84,6 @@ docker-compose exec --user=laradock workspace bash
 > Copy the second `Client ID` generated and paste in `CLIENT_WEB_ID` in the `.env`file:
 > Copy the `Client Secret` of the `Client ID`you copied and paste in `CLIENT_WEB_SECRET`
 
-
-This will generate all the tables and will create an admin user with the following credentials:
-
-email: admin@admin.com\
-password: admin
 
 12. Finally Create the documentations of the API endpoints with ApiDocJs using the artisan command:
 
