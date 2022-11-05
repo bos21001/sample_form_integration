@@ -126,6 +126,8 @@ php artisan apiato:apidoc
 
 13. **(Optional)**: Follow the Getting Started of [sample_form_react](https://github.com/bos21001/sample_form_react) which consume these APIs properly.
 
+[Getting Started walkthrough](https://youtu.be/eIE1q_bcKIU)
+
 [Software Demo Video](http://youtube.link.goes.here) - Coming soon!!
 
 # Relational Database
@@ -177,3 +179,8 @@ It has only one database and make use of the following tables that are generated
 
 * Create relational tables were users have sample-forms
 * Create a home view instead of Apiato home page
+
+
+# Credits
+
+Thanks to [André Bellafronte](https://github.com/andrekutianski) who taught and presented me Apiato, Laradock and its tools!
