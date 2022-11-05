@@ -128,7 +128,7 @@ php artisan apiato:apidoc
 
 [Getting Started walkthrough](https://youtu.be/eIE1q_bcKIU)
 
-[Software Demo Video](http://youtube.link.goes.here) - Coming soon!!
+[Software Demo Video](https://youtu.be/lClAawc4Btk)
 
 # Relational Database
 
