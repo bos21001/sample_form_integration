@@ -183,4 +183,4 @@ It has only one database and make use of the following tables that are generated
 
 # Credits
 
-Thanks to [André Bellafronte](https://github.com/andrekutianski) who taught and presented me Apiato, Laradock and its tools!
+Thanks to [André Bellafronte](https://github.com/andrekutianski) who taught me those principles, and presented me Apiato, Laradock and its tools!
